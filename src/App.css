@@ -10,14 +10,16 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  width: 100%; /* Гарантируем ширину */
 }
 
-/* Изменено: justify-content: flex-start вместо center */
 .toolbar {
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start !important; /* Принудительно влево */
+  flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .filter-btn {
@@ -40,12 +42,12 @@ body {
   border-color: #333;
 }
 
-/* Изменено: justify-content: flex-start вместо center */
 .project-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: flex-start; 
+  justify-content: flex-start !important; /* Принудительно влево */
+  width: 100%;
 }
 
 .project-img {
